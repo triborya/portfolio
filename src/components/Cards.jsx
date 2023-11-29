@@ -8,6 +8,8 @@ import Calculatrice from "../assets/Calculatrice.png";
 import Drum from "../assets/Drum Machine.png";
 import Space from "../assets/Space Tourism.png";
 import Random from "../assets/Random Quote.png";
+import HoverSound from "../assets/mail-sent.mp3";
+import { Howl, Howler } from "howler";
 
 function Cards() {
   const cards = [
@@ -67,6 +69,14 @@ function Cards() {
     },
   ];
 
+  const hoverSoundEffect = new Howl({
+    src: [HoverSound],
+  });
+
+  const handleCardHover = () => {
+    hoverSoundEffect.play();
+  };
+
   return (
     <>
       <div className="topPartProjets">
@@ -75,7 +85,7 @@ function Cards() {
       </div>
       <div className="cardsGrid">
         {cards.map((card) => (
-          <div key={card.id}>
+          <div key={card.id} onMouseEnter={handleCardHover}>
             <img className="cardImage" src={card.image} alt={card.title} />
             <div className="cardTextDiv">
               <h2 className="cardTitle">{card.title}</h2>

@@ -36,8 +36,8 @@ function Footer() {
       </span>
       <div className="footerBottom">
         <h2 className="authorFooter">
-          Ivan <br />
-          Petrov
+          Dmitrie <br />
+          Gorobcov
         </h2>
         <div className="logoFooterDiv">
           <img src={GithubLogo} />

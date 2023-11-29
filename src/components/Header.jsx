@@ -5,10 +5,9 @@ import EifelTowerImage from "../assets/EifelTower.png";
 
 function Header() {
   let HeaderData = {
-    author: "Ivan Petrov",
-    title: "const Curious ; let Creative",
-    subtitle:
-      "Basé à Paris je suis un développeur Fullstack passionné par le developpement web & l’UX/UI",
+    author: "Gorobcov Dmitrie",
+    title: "Some non informativ bullshit about me",
+    subtitle: "Even more non informativ bullshit about me",
   };
 
   return (
