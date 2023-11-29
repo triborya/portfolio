@@ -28,7 +28,7 @@ function Header() {
           />
         </div>
       </div>
-      <hr />
+      <hr className="headerHr" />
     </>
   );
 }

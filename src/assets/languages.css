@@ -12,4 +12,12 @@ h3 {
   font-weight: 700;
   line-height: 56px; /* 116.667% */
   letter-spacing: -1.5px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 500ms;
+}
+
+h3:hover {
+  transform: scale(1.03);
+  transition: 500ms;
 }

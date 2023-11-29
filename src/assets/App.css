@@ -2,3 +2,17 @@
   padding-left: 60px;
   padding-right: 60px;
 }
+
+* {
+  z-index: 1;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.App {
+  z-index: -999;
+}
+
+hr {
+  position: relative;
+}

@@ -1,4 +1,8 @@
 import "../assets/footer.css";
+import GithubLogo from "../assets/GitHubLogo.svg";
+import LinkedInLogo from "../assets/LinkedInLogo.svg";
+import LinkLogo from "../assets/LinkLogo.svg";
+import CubeLogo from "../assets/cubeLogo.svg";
 
 function Footer() {
   return (
@@ -25,6 +29,21 @@ function Footer() {
             <textarea id="textArea" name="lname" />
           </form>
           <button className="footerBtn">envoyer</button>
+        </div>
+      </div>
+      <span>
+        <hr className="footerHR" />
+      </span>
+      <div className="footerBottom">
+        <h2 className="authorFooter">
+          Ivan <br />
+          Petrov
+        </h2>
+        <div className="logoFooterDiv">
+          <img src={GithubLogo} />
+          <img src={LinkedInLogo} />
+          <img src={LinkLogo} />
+          <img src={CubeLogo} />
         </div>
       </div>
     </>
